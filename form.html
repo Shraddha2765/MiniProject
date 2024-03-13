@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="miniproject.css">
+    <title>Health Website Membership</title>
+    <style>
+
+        form {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            color: antiquewhite;
+            margin-left: 600px;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="About.html">About</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="contact.html" style="margin-right: 200px;">Contact us</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="position: relative;margin-top: 0px;margin-left: 20px;">Search Here</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+         
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          </script>
+    </nav>
+<br><br><hr><br>
+<form id="membershipForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="membership">Select Membership:</label>
+    <select id="membership" name="membership" required>
+        <option value="basic">Monthly</option>
+        <option value="premium">Yearly</option>
+        <option value="ultimate">Lifetime</option>
+    </select>
+
+    <label for="paymentMethod">Select Payment Method:</label>
+    <select id="paymentMethod" name="paymentMethod" required>
+        <option value="creditCard">Credit Card</option>
+        <option value="paypal">PayPal</option>
+    </select>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var membership = document.getElementById('membership').value;
+        var paymentMethod = document.getElementById('paymentMethod').value;
+
+        // You can perform further validation or send this data to a server for processing/payment handling
+
+        alert("Thank you for submitting the form!\nName: " + name + "\nEmail: " + email + "\nMembership: " + membership + "\nPayment Method: " + paymentMethod);
+    }
+</script>
+
+<footer style="margin-top: 150px;">
+  <div class="footer-option">
+      <a href="miniproject.html">Home</a>
+      <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+  </div>
+  <div class="footer-option">
+      <a href="Excersise.html">Exercise</a>
+      <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+  </div>
+  <div class="footer-option">
+      <a href="contact.html">Contact Us</a>
+      <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+  </div>
+  <div class="footer-option">
+      <a href="#">Email</a>
+      <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+  </div>
+  <div class="footer-option">
+      <a href="">Instagram</a>
+      <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+  </div>
+  <div class="footer-option">
+      <a href="#">Twitter</a>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+  </div>
+<br>
+  <div class="copyright" style="text-align: center;">
+      &copy; 2024 HealthIsWealth. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
+

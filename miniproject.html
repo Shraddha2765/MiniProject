@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthIsWealth</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        
+        .eq
+        {
+             color: black;
+             padding: 16px;
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYh-0q0isK2wD-R_03hDm59Ff4B0Z8ymq6ew&usqp=CAU");
+             background-size: cover;
+             background-repeat: no-repeat;
+             height: 300px;
+             margin-top: 50px; 
+             margin-right: 30px;
+             width: 300px;
+        }
+        #ex{
+          margin-left: 20px;
+        }
+        .main
+        {
+            display: flex;
+            width: 100%;
+            margin-left: 120px;
+        }
+        .list{
+             font-size: 20px;
+         }
+         #ex
+         {
+            margin-left: 50px;
+         }
+       
+         .dropbtn {
+  background-color: white;
+  color: rgb(128, 128, 219);
+ 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:black;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+     </style>
+ 
+    
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="about.html">About</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="contact.html" style="margin-right: 200px;">Contact us</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="position: relative;margin-top: 0px;margin-left: 20px;">Search Here</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+         
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          </script>
+    </nav>
+    <hr>
+<div id="offer" style="text-align: center;position: relative;"  ><p style="position: relative;top:0px;">We have a <b > Special Membership Trial Offer</b> just <b> @599</b></p></div> 
+<br><hr><br>
+    <p id="text1" class="text-line">Enjoy the workout session of all age groups..! </p><br><br>
+    <img src="https://media.istockphoto.com/id/1132086660/photo/side-view-of-beautiful-muscular-woman-running-on-treadmill.jpg?s=612x612&w=0&k=20&c=5Vq_BJjG7sbIyKIP-Adu0pChReDXm0dC7BVPvto2M0I=" style="height: 200px;width: 300px;" class="img" id="img1">
+    <p ID="text2"class="text-line" >Stress releifing Laughter clubs..! </p><br><br>
+    <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_1280.jpg" id= "img2" class="img"  style="height: 200px;width: 300px;" >
+    <p ID="text3" class="text-line">Increase your lifetime with good diet..! </p><br><br>
+    <img src="https://img.freepik.com/free-photo/young-happy-sportswoman-getting-ready-workout-tying-shoelace-fitness-center_637285-470.jpg"  style="height: 200px;width: 300px;" id="img3" class="img" /><br><br>
+    <br><br>
+    
+<div class="main">
+     <div style="border: double 5px black;" class="eq" id="ex">
+         <h1 style="font-size: 35px;"><a href=Excersise.html style="text-decoration: none;color: black;">Excersises</a></h1>
+         <ul style="list-style-type: square;" class="list">
+             <li>Zumba</li><br><br>
+             <li>Yoga</li><br><br>
+             <li>Meditation</li>
+         </ul>
+     </div>
+     <div style="border: double 5px black;margin-left:0px;" class="eq" id="mem">
+         <h1 style="font-size: 35px;"><a href=Memberships.html style="text-decoration: none;color: black;">Memberships</a></h1>
+         <ul style="list-style-type: square;" class="list">
+             <li>Weekly</li><br><br>
+             <li>Monthly</li><br><br>
+             <li>Yearly</li><br><br>
+             
+         </ul>
+     </div>
+ 
+     <div style="border: double 5px black;margin-right: 100px;" class="eq" id="diet">
+         <h1 style="font-size: 35px;"><a href=Diet.html style="text-decoration: none;color: black;">Diet</a></h1>
+         <ul style="list-style-type: square;" class="list">
+             <li>For Weight Loss</li><br><br>
+             <li>For weight gain</li><br><br>
+             <li>Normal healthy diet</li>
+         </ul>
+     </div>
+</div><br><br>
+</body>
+
+
+<footer>
+  <div class="footer-option">
+      <a href="miniproject.html">Home</a>
+      <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+  </div>
+  <div class="footer-option">
+      <a href="Excersise.html">Exercise</a>
+      <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+  </div>
+  <div class="footer-option">
+      <a href="contact.html">Contact Us</a>
+      <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+  </div>
+  <div class="footer-option">
+      <a href="#">Email</a>
+      <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+  </div>
+  <div class="footer-option">
+      <a href="">Instagram</a>
+      <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+  </div>
+  <div class="footer-option">
+      <a href="#">Twitter</a>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+  </div>
+<br>
+  <div class="copyright" style="text-align: center;">
+      &copy; 2024 HealthIsWealth. All rights reserved.
+  </div>
+</footer>
+</html>
+

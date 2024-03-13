@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthIsWealth</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        ul{
+            color:white;
+        }
+        h2,h1{
+          color:rgb(30, 221, 167);
+        }
+        .eq
+        {
+             color: black;
+             padding: 16px;
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYh-0q0isK2wD-R_03hDm59Ff4B0Z8ymq6ew&usqp=CAU");
+             background-size: cover;
+             background-repeat: no-repeat;
+             height: 300px;
+             margin-top: 50px; 
+             margin-right: 30px;
+             width: 300px;
+        }
+        #ex{
+          margin-left: 20px;
+        }
+        .dropbtn {
+  background-color: white;
+  color: rgb(128, 128, 219);
+  /* padding: 16px; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:black;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown a:hover {background-color: #ddd;} */
+#join{
+  background-color: rgb(175, 242, 255);
+  color: black;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 3px;
+  height:50px;
+  width:120px;
+  font-size: 20px;
+}
+#content {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #content {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+    .check{
+      height: 80px;
+      width: 100%;
+      text-align: center;
+      color: aquamarine;
+    }
+   
+</style>
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="about.html">About</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="contact.html" style="margin-right: 200px;">Contact us</a>
+        <!-- <input type="text area" placeholder="Search Here..."> -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="position: relative;margin-top: 0px;margin-left: 20px;">Search Here</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+         
+          </script>
+    </nav>
+<br><hr><br>
+    <h2 style="text-align: center;font-family: cursive;">NOW IT'S YOUR TURN TO GIVE SAME EFFORTS NO MATTER WHAT..AS WE SAY : </h2>
+    <h1 style="text-align: center;"><B STYLE="color: rgb(30, 221, 167);font-size: xx-large;">HEALTH IS REAL WEALTH!!</B> </h1><Br><br>
+        
+    <ul class="actualmemb">
+        <li ><b>Monthly membership Rs.1999-/</b><br>
+            <ul style="list-style-type:none;"><br>
+            <li><i>It is indeed a fabulous plan.</i></li>
+            <li><i>You can enjoy our daily morning and evening excersise sessions and effective diet plans based on your physic.</i></li>
+            </ul>
+        </li>
+        <br>
+        <button id="join">Join Now</button><br><hr><br>
+        <li><b>Half Yearly membership Rs.3999-/</b><br>
+            <ul style="list-style-type:none;"><br>
+            <li><i>You can have the amazing opportunity to regain your health.</i></li>
+            <li><i>There are lot of things to learn which are specific depending on your personal health.</i></li>
+            </ul>
+        </li>
+
+        <br>
+        <button id="join">Join Now</button>
+        <br><hr><br>
+        <li><b>Yearly membership Rs.4999-/</b><br>
+            <ul style="list-style-type:none;"><br>
+                <li><i>A permenant effective track for fitness is here.</i></li>
+                <li><i>It is well said that in just 21 days you get use to with the habits and here in our yearly membership <br> we offer best opportunity even for healthiest person or for weakest person <br>
+                    to make their dream of <b>'being fit' </b>become true.</i></li><br>
+                <li><b>Assurity is our biggest strength!</b></li>
+            </ul>
+        </li>
+        <br>
+        <button id="join">Join Now</button><br><hr><br>
+    </ul>
+    <script>
+      // Function to be called when the button is clicked
+      function openNewPage() {
+        // Replace 'https://example.com' with the URL of the webpage you want to open
+        window.open('form.html', '_blank');
+      }
+    
+      // Attach the function to the button's click event
+      document.getElementById('join').addEventListener('click', openNewPage);
+    </script>
+    <div class="check"><h3>You can check your required diet and excersise plan by entering your weight and height here</h3></div>
+    <br><br>
+  <div id="content" style="margin-left: 570px;background-color: black;color:white">
+      <h2>Weight and Height Input</h2>
+      <form onsubmit="getRecommendation(); return false;">
+        <label for="weight">Weight (in kg): </label>
+        <input type="number" id="weight" required><br>
+  
+        <label for="height">Height (in cm): </label>
+        <input type="number" id="height" required><br>
+  
+        <button type="submit" style="background-color: aquamarine;color: black;margin-top: 10px;">Get Plan</button>
+      </form>
+  
+      <div id="result"></div>
+  
+      <script>
+        function getRecommendation() {
+          const weight = parseFloat(document.getElementById('weight').value);
+          const height = parseFloat(document.getElementById('height').value);
+  
+          let dietPlan = '';
+          let exercisePlan = '';
+  
+          if (weight < 50) {
+            dietPlan = 'Low-calorie diet';
+            exercisePlan = 'Cardio exercises and light weight training';
+          } else if (weight >= 50 && weight <= 70) {
+            dietPlan = 'Balanced diet with moderate protein intake';
+            exercisePlan = 'Mix of cardio and strength training exercises';
+          } else {
+            dietPlan = 'High-protein diet with controlled carbohydrates';
+            exercisePlan = 'Intensive cardio and strength training regimen';
+          }
+  
+          const resultDiv = document.getElementById('result');
+          resultDiv.innerHTML = `
+            <h3>Your Recommended Diet Plan:</h3>
+            <p>${dietPlan}</p>
+            <h3>Your Recommended Exercise Plan:</h3>
+            <p>${exercisePlan}</p>
+          `;
+        }
+      </script>
+    </div>
+    <footer>
+      <div class="footer-option">
+          <a href="miniproject.html">Home</a>
+          <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+      </div>
+      <div class="footer-option">
+          <a href="Excersise.html">Exercise</a>
+          <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+      </div>
+      <div class="footer-option">
+          <a href="contact.html">Contact Us</a>
+          <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+      </div>
+      <div class="footer-option">
+          <a href="#">Email</a>
+          <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+      </div>
+      <div class="footer-option">
+          <a href="">Instagram</a>
+          <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+      </div>
+      <div class="footer-option">
+          <a href="#">Twitter</a>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+      </div>
+    <br>
+      <div class="copyright" style="text-align: center;">
+          &copy; 2024 HealthIsWealth. All rights reserved.
+      </div>
+    </footer>
+  
+</body>
+</html>

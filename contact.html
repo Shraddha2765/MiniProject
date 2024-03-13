@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        .contact-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height:300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icon {
+            margin-right: 10px;
+        }
+        img{
+            height: 15px;
+            width: 25px;
+        }
+
+    </style>
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="about.html">About</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="contact.html" style="margin-right: 200px;">Contact us</a>
+        <!-- <input type="text area" placeholder="Search Here..."> -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="position: relative;margin-top: 0px;margin-left: 20px;">Search Here</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          </script>
+    </nav><br><br>
+   <div class="contact-container" style="margin-left: 500px;background-color: #333;">
+    <p style="font-size: xx-large;color: white;font-family: cursive;text-align: center;">Contact Us</p>
+    <div class="contact-info">
+        <a href="https://www.instagram.com/27_shraddha_" class="social-link" target="_blank">
+            <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram" class="social-icon">
+            Instagram: @27_shraddha_
+        </a>
+
+        <a href="https://twitter.com/shraddha27" class="social-link" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter" class="social-icon">
+            Twitter: @shraddha27
+        </a>
+    <p style="color: #fff;">Email: <a href="mailto:shraddhautpat6@gmail.com" style="text-decoration: none;color: #fff;">shraddhautpat6@gmail.com</a></p>
+    </div>
+</div>
+<br><br>
+
+
+    <footer style="margin-top: 20vh;">
+        <div class="footer-option">
+            <a href="miniproject.html">Home</a>
+            <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+        </div>
+        <div class="footer-option">
+            <a href="Excersise.html">Exercise</a>
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+        </div>
+        <div class="footer-option">
+            <a href="contact.html">Contact Us</a>
+            <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+        </div>
+        <div class="footer-option">
+            <a href="#">Email</a>
+            <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+        </div>
+        <div class="footer-option">
+            <a href="">Instagram</a>
+            <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+        </div>
+        <div class="footer-option">
+            <a href="#">Twitter</a>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+        </div>
+      <br>
+        <div class="copyright" style="text-align: center;">
+            &copy; 2024 HealthIsWealth. All rights reserved.
+        </div>
+      </footer>
+</body>
+</html>

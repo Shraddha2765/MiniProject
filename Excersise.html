@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthIsWealth</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <style>
+        
+        .eq
+        {
+             color: black;
+             padding: 16px;
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYh-0q0isK2wD-R_03hDm59Ff4B0Z8ymq6ew&usqp=CAU");
+             background-size: cover;
+             background-repeat: no-repeat;
+             height: 300px;
+             margin-top: 50px; 
+             margin-right: 30px;
+             width: 300px;
+        }
+        #ex{
+          margin-left: 20px;
+        }
+        .main
+        {
+            display: flex;
+            width: 100%;
+            margin-left: 120px;
+        }
+        .list{
+             font-size: 20px;
+         }
+         #ex
+         {
+            margin-left: 50px;
+         }
+       
+         .dropbtn {
+        background-color: white;
+        color: rgb(128, 128, 219);
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:black;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+    display: block;
+}
+ 
+section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color:white;
+        }
+
+        .exercise-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .exercise-card {
+            width: 300px;
+            margin: 15px;
+            padding: 15px;
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .exercise-card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 1.5s infinite;
+        }
+
+        #exerciseContainer {
+            background-color:black;
+            color:  white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: 70px;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #exerciseName {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #startButton {
+            
+          background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+     
+        #meditation-video {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .meditation-text {
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .meditation-button {
+            display: inline-block;
+            background-color: black;
+            color: cyan;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .meditation-button:hover {
+            background-color: rgb(35, 192, 192);
+            color: white;
+        }
+
+
+     </style>
+ 
+    
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="about.html">About</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="contact.html" style="margin-right: 200px;">Contact us</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="position: relative;margin-top: 0px;margin-left: 20px;">Search Here</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+          
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+    </nav> 
+  
+<section>
+    <h2>Zumba Session Information</h2>
+    <p style="color: cyan;">Join our exciting Zumba sessions for a fun and energetic workout!</p>
+    <p style="color: cyan;">Schedule: Mondays and Wednesdays at 6:00 PM</p>
+</section>
+
+<section>
+    <h2>Yoga Asanas with Pictures</h2>
+    <div class="exercise-container">
+        <div class="exercise-card">
+            <img src="https://images.herzindagi.info/image/2022/May/yoga-eye-sight-main.jpg" alt="Yoga Pose 1">
+            <p style="color: white;">Sarvangasana</p>
+        </div>
+        <div class="exercise-card">
+            <img src="https://c.ndtvimg.com/2023-03/cejkmge8_bhujangasana-cobra-pose-benefits_625x300_28_March_23.jpg" alt="Yoga Pose 2">
+            <p style="color: white;">Bhujangasana</p>
+        </div>
+        <div class="exercise-card">
+            <img src="https://shwetyoga.in/wp-content/uploads/2020/10/Yoga-classes-in-thane-west-3.png" alt="Yoga Pose 3">
+            <p style="color: white;">Suryanamskar</p>
+        </div>
+    </div>
+</section>
+<br><hr><br>
+<section>
+    <p style="color:white;"><b style="font-size: 30px;">Meditation</b></p>
+       <p> <i style="font-size: 20px;color:white;">-The most essential component of mind excersise</i> </p> 
+        <div style="margin-left: 80px;">
+            <video src="video (2160p).mp4" height="300" width="470" id="meditation-video" controls></video>
+        </div>
+
+        <div class="meditation-text">
+            <h2 style="font-family: cursive;">Why Meditate?</h2>
+            <p style="color: cyan;">Meditation has numerous health benefits, including stress reduction, improved focus, and increased emotional well-being. Take a few minutes each day to relax your mind and body through meditation.</p>
+        </div>
+
+        <div class="meditation-text">
+            <h2 style="font-family: cursive;">Guided Meditation</h2>
+            <p style="color: cyan;">Follow the guided meditation video above to start your journey to a calmer and healthier you.</p>
+        </div>
+        <br>
+
+        <div class="meditation-text">
+            <button class="meditation-button" onclick="togglePlayPause()">Play / Pause</button>
+        </div>
+    </section>
+
+    <script>
+        var video = document.getElementById("meditation-video");
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+<footer>
+    <div class="footer-option">
+        <a href="miniproject.html">Home</a>
+        <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+    </div>
+    <div class="footer-option">
+        <a href="Excersise.html">Exercise</a>
+        <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+    </div>
+    <div class="footer-option">
+        <a href="contact.html">Contact Us</a>
+        <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+    </div>
+    <div class="footer-option">
+        <a href="#">Email</a>
+        <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+    </div>
+    <div class="footer-option">
+        <a href="">Instagram</a>
+        <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+    </div>
+    <div class="footer-option">
+        <a href="#">Twitter</a>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+    </div>
+  <br>
+    <div class="copyright" style="text-align: center;">
+        &copy; 2024 HealthIsWealth. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
