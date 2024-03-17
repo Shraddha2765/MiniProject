@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <link rel="stylesheet" href="why.css">
+    <style>
+    
+
+        .contact-container {
+            background-color: rgb(118, 7, 124);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height:300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icon {
+            margin-right: 10px;
+        }
+        img{
+            height: 15px;
+            width: 25px;
+        }
+
+    </style>
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="diet.html">Diet</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="why.html" style="margin-right: 200px;">Why HealthIsWealth?</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Looking For Something?&#x1F9D0</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+         
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          </script>
+    </nav>
+    <br><br>
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="reasons">
+            <div class="reason fadeIn">
+                <h3>Expert Guidance</h3>
+                <p>Access to expert advice and guidance from healthcare professionals.</p>
+            </div>
+            <div class="reason fadeIn">
+                <h3>Comprehensive Information</h3>
+                <p>Find detailed information on various health topics and conditions.</p>
+            </div>
+            <div class="reason fadeIn">
+                <h3>Interactive Tools</h3>
+                <p>Interactive tools to track your progress and manage your health.</p>
+            </div>
+        </div>
+        <p>We believe in empowering individuals to take control of their health and well-being. Whether you're looking for information on managing a chronic condition, tips for a healthier lifestyle, or simply seeking reassurance and support, our website is here for you.</p>
+        <p>Our team of healthcare professionals is dedicated to providing accurate, up-to-date information and resources to help you make informed decisions about your health.</p>
+        <p>Join our community today and embark on a journey towards a healthier, happier you!</p>
+        <a href="form.html" class="cta-button">Join Now</a>
+    </div>
+
+<br><br>
+
+
+    <footer style="margin-top: 20vh;">
+        <div class="footer-option">
+            <a href="miniproject.html">Home</a>
+            <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+        </div>
+        <div class="footer-option">
+            <a href="Excersise.html">Exercise</a>
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+        </div>
+        <div class="footer-option">
+            <a href="contact.html">Contact Us</a>
+            <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+        </div>
+        <div class="footer-option">
+            <a href="#">Email</a>
+            <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+        </div>
+        <div class="footer-option">
+            <a href="">Instagram</a>
+            <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+        </div>
+        <div class="footer-option">
+            <a href="#">Twitter</a>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+        </div>
+      <br>
+        <div class="copyright" style="text-align: center;">
+            &copy; 2024 HealthIsWealth. All rights reserved.
+        </div>
+      </footer>
+</body>
+</html>
