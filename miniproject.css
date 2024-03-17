@@ -12,16 +12,17 @@ header
     color:white;
     margin-right:150px;
     text-decoration: none;
+    letter-spacing: 1.5px;
 }
 input
 {
     margin-right: 10px;
 }
-.navbar:hover
-{
-    color: black;
-    background-color: aliceblue;
+nav a:hover{
+    text-decoration: underline;
+    
 }
+
 nav
 {
     display: flex;
@@ -119,10 +120,7 @@ div
     display: inline-block;
     
 }
-section
-{
-    margin-right: 100px;
-}
+
 .img
 {
     animation: move 3s ease-out 1s 2 normal none;
@@ -138,9 +136,6 @@ section
        margin-left:20px;
     }
     
-}
-hr{
-    width: 100%;
 }
 footer {
     background-color: #1a1a1a;
@@ -189,8 +184,8 @@ footer {
     margin-top: 20px;
 }
 .dropbtn {
-    background-color: white;
-    color: rgb(128, 128, 219);
+    background-color:black;
+    color:white;
     /* padding: 16px; */
     font-size: 16px;
     border: none;
@@ -210,7 +205,7 @@ footer {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgb(210, 209, 209);
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -224,6 +219,9 @@ footer {
     display: block;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown a:hover {background-color: #ddd;} 
   
   .show {display: block;}
+  
+
+  
