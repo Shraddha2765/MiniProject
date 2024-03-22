@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthIsWealth</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <link rel="stylesheet" href="excersise.css">
+
+</head>
+<header>WELCOME TO HealthIsWealth CLUB!!!</header>
+<body>
+    <nav>
+        <a class="navbar" href="miniproject.html">Home</a>
+        <a class="navbar" href="diet.html">Diet</a>
+        <a class="navbar" href="Memberships.html">Memberships</a>
+        <a class="navbar" href="Excersise.html">Excercise</a>
+        <a class="navbar" href="why.html" style="margin-right: 200px;">Why HealthIsWealth?</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Looking For Something?&#x1F9D0</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Diet.html">Diet</a>
+              <a href="Excersise.html">About excersises</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="contact.html">Other Queries</a>
+            </div>
+          </div>
+          
+          <script>
+         
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          </script>
+    </nav>
+    
+<section class="zumba">
+    <h2 id="zumba-info">Zumba Session Information</h2>
+    <p class="zumbatime">Join our exciting Zumba sessions for a fun and energetic workout!</p>
+    <p class="zumbatime">Schedule: Mondays and Wednesdays at 6:00 PM</p>
+</section>
+
+<section>
+    <h2 id="zumba-info"><strong>Yoga Asanas with Pictures</strong></h2>
+    <div class="exercise-container">
+        <div class="exercise-card">
+            <img src="https://images.herzindagi.info/image/2022/May/yoga-eye-sight-main.jpg" alt="Yoga Pose 1" class="poses">
+            <p id="poses">Sarvangasana</p>
+        </div>
+        <div class="exercise-card">
+            <img src="https://c.ndtvimg.com/2023-03/cejkmge8_bhujangasana-cobra-pose-benefits_625x300_28_March_23.jpg" alt="Yoga Pose 2" class="poses">
+            <p  id="poses">Bhujangasana</p>
+        </div>
+        <div class="exercise-card">
+            <img src="https://shwetyoga.in/wp-content/uploads/2020/10/Yoga-classes-in-thane-west-3.png" alt="Yoga Pose 3" class="poses">
+            <p  id="poses">Suryanamskar</p>
+        </div>
+    </div>
+</section>
+<br><hr><br>
+
+    
+
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="styled-container">
+              <h2 class="heading">Why Meditate?</h2>
+              <p class="paragraph">Meditation has numerous health benefits, including stress reduction, improved focus, and increased emotional well-being. Take a few minutes each day to relax your mind and body through meditation.</p>
+              <p class="paragraph">Follow the guided meditation video above to start your journey to a calmer and healthier you.</p>
+              <div class="video-container">
+                <video height="500px" width="600px" autoplay loop>
+                  <source src="video (2160p).mp4">
+                </video>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<footer>
+    <div class="footer-option">
+        <a href="miniproject.html">Home</a>
+        <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
+    </div>
+    <div class="footer-option">
+        <a href="Excersise.html">Exercise</a>
+        <img src="https://cdn1.vectorstock.com/i/1000x1000/36/80/exercise-stress-test-logo-icon-design-vector-15613680.jpg" alt="Exercise">
+    </div>
+    <div class="footer-option">
+        <a href="contact.html">Contact Us</a>
+        <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+    </div>
+    <div class="footer-option">
+        <a href="#">Email</a>
+        <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Email">
+    </div>
+    <div class="footer-option">
+        <a href="">Instagram</a>
+        <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
+    </div>
+    <div class="footer-option">
+        <a href="#">Twitter</a>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
+    </div>
+  <br>
+    <div class="copyright" style="text-align: center;">
+        &copy; 2024 HealthIsWealth. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
