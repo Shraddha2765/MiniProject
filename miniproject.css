@@ -1,8 +1,8 @@
 header
 {
-    background-color: black;
+    background-color: rgb(93, 20, 20);
     font-family: fantasy;
-    color:white;
+        color: white;
     text-align: center;
     font-size: 40px;
     letter-spacing: 2px;
@@ -26,16 +26,21 @@ nav a:hover{
 nav
 {
     display: flex;
-    background-color:black;
+    background-color: rgb(88, 32, 32);
     height: 30px;
     padding: 10px;
 }
 BODY
 {
-    background-image: url("https://assets-global.website-files.com/61dc66728f91394eab631066/628e3fa897855ee380834c60_gym-hero.jpg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/805/307/original/flat-design-abstract-background-soft-liquid-shapes-template-with-modern-gradient-background-colors-cool-aesthetic-background-design-suitable-for-social-media-post-mobile-app-banner-web-ads-free-vector.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top:20px;
+    
+}
+#offerbox{
+    width:1200px;
+    font-size: 40px;
 }
 #offer
 {   
@@ -51,7 +56,7 @@ BODY
 {
     from
     {
-        color:white; 
+        color:black; 
         margin-left: -600px;
     }
     to
@@ -73,7 +78,7 @@ BODY
     margin-top: 90px; 
     font-size: xx-large;
     font-weight: bolder;
-    color: aliceblue;
+    color:darkblue;
 }
 
 #text2
@@ -83,7 +88,7 @@ BODY
     margin-top: 120px;
     font-size: xx-large;
     font-weight: bolder;
-    color: aliceblue;
+    color:darkblue;
 }
 #img2{
     margin-top: 30px;
@@ -96,7 +101,7 @@ BODY
     margin-top: 120px;
     font-size: xx-large;
     font-weight: bolder;
-    color: aliceblue;
+    color:darkblue;
 }
 #img3
 {
@@ -184,17 +189,12 @@ footer {
     margin-top: 20px;
 }
 .dropbtn {
-    background-color:black;
+    background-color:rgb(88, 32, 32);
     color:white;
     /* padding: 16px; */
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color:black;
-    color:white;
   }
   
   .dropdown {
