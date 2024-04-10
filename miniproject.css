@@ -1,8 +1,7 @@
 header
 {
-    background-color: rgb(93, 20, 20);
-    font-family: fantasy;
-        color: white;
+    /* background-color: rgb(93, 20, 20); */
+    color: rgb(93, 20, 20);
     text-align: center;
     font-size: 40px;
     letter-spacing: 2px;
@@ -10,9 +9,10 @@ header
 .navbar
 {
     color:white;
-    margin-right:150px;
+    margin-right:230px;
     text-decoration: none;
     letter-spacing: 1.5px;
+    font-size: 20px;
 }
 input
 {
@@ -27,8 +27,9 @@ nav
 {
     display: flex;
     background-color: rgb(88, 32, 32);
-    height: 30px;
+    height: 37px;
     padding: 10px;
+    margin-top: 0px;
 }
 BODY
 {
@@ -36,9 +37,11 @@ BODY
     background-repeat: no-repeat;
     background-size: cover;
     padding-top:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
-#offerbox{
+#offerbox
+{
     width:1200px;
     font-size: 40px;
 }
@@ -56,12 +59,12 @@ BODY
 {
     from
     {
-        color:black; 
+        color:rgb(161, 68, 68); 
         margin-left: -600px;
     }
     to
     {
-        color:wheat; 
+        color:rgb(97, 38, 29); 
         margin-left: 1200px;
     }
 }
@@ -78,7 +81,7 @@ BODY
     margin-top: 90px; 
     font-size: xx-large;
     font-weight: bolder;
-    color:darkblue;
+    color:brown;
 }
 
 #text2
@@ -88,7 +91,7 @@ BODY
     margin-top: 120px;
     font-size: xx-large;
     font-weight: bolder;
-    color:darkblue;
+    color:brown;
 }
 #img2{
     margin-top: 30px;
@@ -101,7 +104,7 @@ BODY
     margin-top: 120px;
     font-size: xx-large;
     font-weight: bolder;
-    color:darkblue;
+    color:brown;
 }
 #img3
 {
@@ -222,10 +225,10 @@ footer {
   .dropdown a:hover {background-color: #ddd;} 
   
   .show {display: block;}
-  
 
+/* why */
   
-.container {
+.whycontainer {
    
     max-width: 900px;
     margin-left: 270px;
@@ -293,6 +296,10 @@ footer {
     cursor: grab;
 }
 
+
+
+/* Excersise */
+
 .zumba {
     padding: 20px;
     text-align: center;
@@ -316,7 +323,7 @@ footer {
     width: 300px;
     margin: 15px;
     padding: 15px;
-    background-color: rgb(3, 36, 54);
+    background-color: rgb(102, 4, 2);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -382,8 +389,8 @@ footer {
 }
 
 #meditation-video {
-    width: 100%;
-    height: 400px;
+    
+    height: 600px;
     border: none;
     margin-bottom: 30px;
 }
@@ -417,8 +424,9 @@ background-color:rgb(241, 236, 245);
 border-radius: 15px;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 padding: 20px;
-margin-left: 60px;
+margin-left: 10px;
 border: solid black;
+width: 80%; height: 600px;
 }
 
 .heading {
@@ -429,24 +437,20 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.paragraph {
+.paragraph 
+{
 color: #6c757d;
 margin-bottom: 20px;
 letter-spacing: 1.5px;
 font-weight: bold;
 }
 
-.video-container {
+.video-container 
+{
 width:100%;
-
 position: relative;
-/* padding-bottom: 56.25%; 16:9 aspect ratio */
-/* padding-bottom: 400px;
-padding-top: 30px; */
 height: 400px;
 overflow: hidden;
-
-
 }
 video{
 margin-top:-60px;
@@ -462,4 +466,34 @@ position: absolute;
 top: 0;
 left: 0;
 
+}
+
+/* diet */
+.bar{
+    display: inline;
+    list-style-type: none;
+    margin-right: 100px;
+    font-weight:bold;
+    font-size: 30px;
+}
+.diet-names{
+    text-decoration: none;
+}
+ 
+.info{
+        background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#diet-icon{
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+#diet-images img{
+    border: 3px solid black;
+    
+}
+#diet-images img:hover{
+    transform: scale(1.16);
 }

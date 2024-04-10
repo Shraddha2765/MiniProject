@@ -1,0 +1,32 @@
+body{
+    letter-spacing: 1.5px;
+    
+}
+a{
+    text-decoration: none;
+    display: inline;
+   
+}
+.bar{
+    display: inline;
+    list-style-type: none;
+    margin-right: 50px;
+    font-weight:bold;
+    font-size: 30px;
+}
+
+li ,h2 ,p{
+    color: rgb(95, 43, 43);
+    font-size: 20px;
+    
+} 
+.info{
+        background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#diet-icon{
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}

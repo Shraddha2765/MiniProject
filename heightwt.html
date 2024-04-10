@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthIsWealth</title>
+  <style>
+    body{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/004/805/307/original/flat-design-abstract-background-soft-liquid-shapes-template-with-modern-gradient-background-colors-cool-aesthetic-background-design-suitable-for-social-media-post-mobile-app-banner-web-ads-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #sub{
+      background-color: brown;
+      color: white;
+      height:30px;
+    }
+    #sub:hover{
+      scale: 1.03;
+    }
+     #healthForm {
+            background-color: rgb(241, 218, 207,0.3);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            color: rgb(0, 0, 0);
+            margin-left: 0px;
+            margin-top: 50px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #btn {
+            background-color: rgba(113,32,109,0.8);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+           
+        }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Health Assessment</h1>
+    <form id="healthForm">
+      <div class="form-group">
+        <label for="height">Height (in cm):</label>
+        <input type="number" class="form-control" id="height" required>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" class="form-control" id="weight" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" id="age" required>
+      </div>
+      <button type="submit" class="btn btn-primary" id = "sub">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("healthForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const height = parseFloat(document.getElementById("height").value);
+      const weight = parseFloat(document.getElementById("weight").value);
+      const age = parseInt(document.getElementById("age").value);
+
+      let dietPlan;
+      let exercisePlan;
+
+      if (height > 160 && weight < 80 && age < 15) {
+        dietPlan = "High-protein intake ";
+        exercisePlan = "Active excersises and variety of sports";
+      } 
+      else if(height > 160 ||  weight < 70 && age >15 && age < 40) {
+        dietPlan = "High protein and low carb intake";
+        exercisePlan = "Strength training exercises and cardio excersises";
+      }
+      else if(age>75)
+      {
+        dietPlan = "Balanced diet in proper proportions."
+        exercisePlan = "Low intensity excersises like walking etc."
+      }
+      else if( weight>80 && weight < 120 )
+      {
+        dietPlan = "Extreme low-carb and good protein diet plan"
+        exercisePlan = "High intensity excersises with cardio and fat burn training."
+      }
+      // Redirect to result.html with parameters
+      window.location.href = `result.html?diet=${encodeURIComponent(dietPlan)}&exercise=${encodeURIComponent(exercisePlan)}`;
+    });
+  </script>
+</body>
+</html>
