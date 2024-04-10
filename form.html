@@ -1,21 +1,21 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="miniproject.css">
     <link rel="stylesheet" href="form.css">
-    <title>Health Website Membership</title>
+    <title>HealthIsWealth</title>
     <style>
 
         form {
-            background-color: rgb(241, 218, 207);
+            background-color: rgb(241, 218, 207,0.3);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 300px;
             color: rgb(0, 0, 0);
-            margin-left: 600px;
+            margin-left: 560px;
             margin-top: 50px;
         }
 
@@ -43,13 +43,13 @@
         }
 
         #btn {
-            background-color: #71206d;
+            background-color: rgba(113,32,109,0.8);
             color: #fff;
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            margin-left: 110px;
+           
         }
     </style>
 </head>
@@ -62,44 +62,15 @@
         <a class="navbar" href="Memberships.html">Memberships</a>
         <a class="navbar" href="Excersise.html">Excercise</a>
         <a class="navbar" href="why.html" style="margin-right: 200px;">Why HealthIsWealth?</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Looking For Something?&#x1F9D0</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="Diet.html">Diet</a>
-              <a href="Excersise.html">About excersises</a>
-              <a href="Memberships.html">Memberships</a>
-              <a href="contact.html">Other Queries</a>
-            </div>
-          </div>
-          
-          <script>
-         
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
-          
-          </script>
-    </nav>
+            </nav>
     
 <br><br><hr><br>
 <h1 style="text-align: center;">INFORMATION FORM</h1>
-<form id="membershipForm">
-    <label for="name">Name:</label>
+<form id="membershipForm" action="heightwt.html" method="post">
+    <label for="name" >Name:</label>
     <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
+    <label for="email" >Email:</label>
     <input type="email" id="email" name="email" required>
 
     <label for="membership">Select Membership:</label>
@@ -110,26 +81,16 @@
     </select>
 
     <label for="paymentMethod">Select Payment Method:</label>
-    <select id="paymentMethod" name="paymentMethod" required>
+    <select id="paymentMethod" name="paymentMethod">
         <option value="creditCard">Credit Card</option>
         <option value="paypal">PayPal</option>
-    </select>
-
-    <button id="btn" type="button" onclick="submitForm()">Submit</button>
+    </select><br>
+<br>
+    <a href="heightwt.html"><button id="btn" type="button"  width=100%;>Submit</button></a>
 </form>
 
-<script>
-    function submitForm() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var membership = document.getElementById('membership').value;
-        var paymentMethod = document.getElementById('paymentMethod').value;
 
-        // You can perform further validation or send this data to a server for processing/payment handling
 
-        alert("Thank you for submitting the form!\nName: " + name + "\nEmail: " + email + "\nMembership: " + membership + "\nPayment Method: " + paymentMethod);
-    }
-</script>
 
 <footer style="margin-top: 150px;">
   <div class="footer-option">
@@ -150,8 +111,8 @@
   </div>
   <div class="footer-option">
       <a href="">Instagram</a>
-      <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709856000&semt=ais" alt="Instagram">
-  </div>
+      <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_">
+
   <div class="footer-option">
       <a href="#">Twitter</a>
       <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter">
