@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HealthIsWealth</title>
     <link rel="stylesheet" href="miniproject.css">
-    <link rel="stylesheet" href="diet.css">
+    <!-- <link rel="stylesheet" href="diet.css"> -->
+    <style>
+        li ,h2 ,p{
+    color: rgb(95, 43, 43);
+    font-size: 20px;
+    body{
+    letter-spacing: 1.5px;
+    
+}
+a{
+    text-decoration: none;
+    display: inline;
+   
+}
+    
+} 
+    </style>
 </head>
 <header>WELCOME TO HealthIsWealth CLUB!!!</header>
 <body>
@@ -15,58 +31,25 @@
         <a class="navbar" href="Memberships.html">Memberships</a>
         <a class="navbar" href="Excersise.html">Excercise</a>
         <a class="navbar" href="why.html" style="margin-right: 200px;">Why HealthIsWealth?</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Looking For Something?&#x1F9D0</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="Diet.html">Diet</a>
-              <a href="Excersise.html">About excersises</a>
-              <a href="Memberships.html">Memberships</a>
-              <a href="contact.html">Other Queries</a>
-            </div>
-          </div>
-          
-          <script>
-         
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
-          
-          </script>
+        
     </nav>
     
    <div >
     <ul>
-        <a href="#introduction"><li class="bar"> <img id="diet-icon" src="https://static.vecteezy.com/system/resources/thumbnails/021/960/529/small_2x/diet-plan-outline-icons-simple-stock-illustration-stock-vector.jpg" alt="Breakfast Icon">Introduction</li></a>
+        
+        <a href="#breakfast" class="diet-names"><li class="bar"><img id="diet-icon" src="https://e7.pngegg.com/pngimages/367/474/png-clipart-computer-icons-rice-bowl-cereal-food-icon-food-breakfast-cereal.png" alt="">Breakfast</li></a>
+        <li class="bar" >|</li>
+        <a href="#lunch" class="diet-names"><li class="bar"><img id="diet-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1AEi21C_yiLUqUbZr6Ipvc8YEZa0Ufb7SA&usqp=CAU" alt="Breakfast Icon">Lunch</li></a>
         <li class="bar">|</li>
-        <a href="#breakfast"><li class="bar"><img id="diet-icon" src="https://e7.pngegg.com/pngimages/367/474/png-clipart-computer-icons-rice-bowl-cereal-food-icon-food-breakfast-cereal.png" alt="">Breakfast</li></a>
+        <a href="#dinner" class="diet-names"><li class="bar"><img id="diet-icon" src="https://e7.pngegg.com/pngimages/614/789/png-clipart-round-black-spoon-and-fork-buffet-breakfast-food-cafe-restaurant-spoon-and-fork-food-breakfast-thumbnail.png" alt="">Dinner</li></a>
         <li class="bar">|</li>
-        <a href="#lunch"><li class="bar"><img id="diet-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1AEi21C_yiLUqUbZr6Ipvc8YEZa0Ufb7SA&usqp=CAU" alt="Breakfast Icon">Lunch</li></a>
-        <li class="bar">|</li>
-        <a href="#dinner"><li class="bar"><img id="diet-icon" src="https://e7.pngegg.com/pngimages/614/789/png-clipart-round-black-spoon-and-fork-buffet-breakfast-food-cafe-restaurant-spoon-and-fork-food-breakfast-thumbnail.png" alt="">Dinner</li></a>
-        <li class="bar">|</li>
-        <a href="#snacks"><li class="bar"><img id="diet-icon" src="https://cdn-icons-png.flaticon.com/512/859/859415.png" alt="">Snacks</li></a>
+        <a href="#snacks" class="diet-names"><li class="bar"><img id="diet-icon" src="https://cdn-icons-png.flaticon.com/512/859/859415.png" alt="">Snacks</li></a>
         
     </ul>
 </div>
 <div class="info">
     <main>
-        <section id="introduction"  >
-            <h2 class="sec">Introduction</h2>
-            <p>Welcome to our healthy diet plan page! A balanced diet is essential for maintaining good health. <br>Here, we provide you with a sample diet plan that includes nutritious meals for breakfast, lunch, dinner, and snacks.</p>
-        </section>
-    
+       
         <section id="breakfast" >
             <h2 class="sec">Breakfast</h2>
             <p>Start your day with a nutritious breakfast to fuel your body and <br> Here are some healthy breakfast options:</p>
@@ -113,7 +96,12 @@
         </section>
     </main>
 </div>  
-    <footer>
+<div style="display: grid; float: right;margin-right: 100px;">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAm7f2rN_7ibCpBJFKC_udT-dCM4tZJEJvJF6l-0iN4A&s" alt="food" style="height: 250px;width:300px;"><br><br><br><br>
+<img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/05/health-snacks-764x1024.jpg" alt="lunch" style="height: 250px;width: 300px;"><br><br><br><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWz8-ar8oD_v8IaycdsJNADU22qfTf0HTipFOQyVLqw&s" alt="dinner" style="height: 250px;width:300px;"></div>
+
+    <footer style="margin-top: 100px;">
         <div class="footer-option">
             <a href="miniproject.html">Home</a>
             <img src="https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt="Home">
