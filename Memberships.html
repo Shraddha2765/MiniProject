@@ -16,54 +16,28 @@
         <a class="navbar" href="Memberships.html">Memberships</a>
         <a class="navbar" href="Excersise.html">Excercise</a>
         <a class="navbar" href="why.html" style="margin-right: 200px;">Why HealthIsWealth?</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Looking For Something?&#x1F9D0</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="Diet.html">Diet</a>
-              <a href="Excersise.html">About excersises</a>
-              <a href="Memberships.html">Memberships</a>
-              <a href="contact.html">Other Queries</a>
-            </div>
-          </div>
+        
           
-          <script>
-         
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
           
-          </script>
     </nav>
     
 <br><hr><br>
-    <h2 style="text-align: center;font-family: cursive;">NOW IT'S YOUR TURN TO GIVE SAME EFFORTS NO MATTER WHAT..AS WE SAY : </h2>
+    <h2 style="text-align: center;">NOW IT'S YOUR TURN TO GIVE SAME EFFORTS NO MATTER WHAT..AS WE SAY : </h2>
     <h1 style="text-align: center;"><b>HEALTH IS REAL WEALTH!!</b></h1><Br><br>
-        
+      <div class = memb-div ">
     <ul class="actualmemb">
         <li class="memb-heading" ><b>Monthly membership Rs.1999-/</b><br>
             <ul style="list-style-type:none;"><br>
-            <li><i>It is indeed a fabulous plan.</i></li>
-            <li><i>You can enjoy our daily morning and evening excersise sessions and effective diet plans based on your physic.</i></li>
+            <li>It is indeed a fabulous plan.</li>
+            <li>You can enjoy our daily morning and evening excersise sessions and effective diet plans based on your physic.</li>
             </ul>
         </li>
         <br>
         <a href="form.html"><button id="join">Join Now</button><br><hr><br></a>
         <li class="memb-heading"><b>Half Yearly membership Rs.3999-/</b><br>
             <ul style="list-style-type:none;"><br>
-            <li><i>You can have the amazing opportunity to regain your health.</i></li>
-            <li><i>There are lot of things to learn which are specific depending on your personal health.</i></li>
+            <li>You can have the amazing opportunity to regain your health.</li>
+            <li>There are lot of things to learn which are specific depending on your personal health.</li>
             </ul>
         </li>
 
@@ -72,60 +46,19 @@
         
         <li class="memb-heading"><b>Yearly membership Rs.4999-/</b><br>
             <ul style="list-style-type:none;"><br>
-                <li><i>A permenant effective track for fitness is here.</i></li>
-                <li><i>It is well said that in just 21 days you get use to with the habits and here in our yearly membership <br> we offer best opportunity even for healthiest person or for weakest person <br>
-                    to make their dream of <b>'being fit' </b>become true.</i></li><br>
+                <li>A permenant effective track for fitness is here.</li>
+                <li>It is well said that in just 21 days you get use to with the habits and here in our yearly membership <br> we offer best opportunity even for healthiest person or for weakest person <br>
+                    to make their dream of <b>'being fit' </b>become true.</li><br>
                 <li><b>Assurity is our biggest strength!</b></li>
             </ul>
         </li>
         <br>
         <a href="form.html"><button id="join">Join Now</button><br><hr><br></a>
     </ul>
+  </div>
+ 
 
-    <div class="check"><h3>You can check your required diet and excersise plan by entering your weight and height here</h3></div>
-    <br><br>
-  <div id="content" >
-      <h2 style="color: black">Weight and Height Input</h2>
-      <form onsubmit="getRecommendation(); return false;">
-        <label for="weight">Weight (in kg): </label>
-        <input type="number" id="weight" required><br>
-  
-        <label for="height">Height (in cm): </label>
-        <input type="number" id="height" required><br>
-  
-        <button type="submit" class="plan-submit">Get Plan</button>
-      </form>
-  
-      <div id="result"></div>
-  </div><br><br>
-      <script>
-        function getRecommendation() {
-          const weight = parseFloat(document.getElementById('weight').value);
-          const height = parseFloat(document.getElementById('height').value);
-  
-          let dietPlan = '';
-          let exercisePlan = '';
-  
-          if (weight < 50) {
-            dietPlan = 'Low-calorie diet';
-            exercisePlan = 'Cardio exercises and light weight training';
-          } else if (weight >= 50 && weight <= 70) {
-            dietPlan = 'Balanced diet with moderate protein intake';
-            exercisePlan = 'Mix of cardio and strength training exercises';
-          } else {
-            dietPlan = 'High-protein diet with controlled carbohydrates';
-            exercisePlan = 'Intensive cardio and strength training regimen';
-          }
-  
-          const resultDiv = document.getElementById('result');
-          resultDiv.innerHTML = `
-            <h3>Your Recommended Diet Plan:</h3>
-            <p>${dietPlan}</p>
-            <h3>Your Recommended Exercise Plan:</h3>
-            <p>${exercisePlan}</p>
-          `;
-        }
-      </script>
+    
     <br>
     <footer>
       <div class="footer-option">
@@ -138,7 +71,7 @@
       </div>
       <div class="footer-option">
           <a href="contact.html">Contact Us</a>
-          <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" alt="Contact Us">
+          <img src="https://i.pngimg.me/thumb/f/720/m2i8A0K9i8G6b1N4.jpg" >
       </div>
       <div class="footer-option">
           <a href="#">Email</a>
@@ -155,7 +88,7 @@
     <br>
       <div class="copyright" style="text-align: center;">
           &copy; 2024 HealthIsWealth. All rights reserved.
-      </div>
+        </div>
     </footer>
   
 </body>
