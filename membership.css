@@ -1,12 +1,12 @@
 ul{
-    color:white;
+    color:rgb(3, 3, 3);
 }
 h2,h1{
-  color:rgb(244, 207, 238);
+  color:rgb(79, 2, 66);
 }
 #join{
-    background-color: rgb(68, 211, 149);
-    color: black;
+    color: white;
+    background-color: brown;
     font-weight: 700;
     border-style: solid;
     border-width: 3px;
@@ -16,18 +16,14 @@ h2,h1{
   }
   #content {
         text-align: center;
-        background-color: #fff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 570px;
+        background-image:radial-gradient(rgb(250, 244, 240),rgb(234, 207, 181),rgb(161, 106, 106));
+        color:black;
       }
-      #content {
-        text-align: center;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+      
   
       input {
         padding: 8px;
@@ -43,8 +39,10 @@ h2,h1{
         height: 80px;
         width: 100%;
         text-align: center;
-        color: aquamarine;
+        color: rgb(0, 0, 0);
       }
       .plan-submit{
-        background-color: aquamarine;color: black;margin-top: 10px;
+        background-color: rgb(0, 0, 0);color: white;margin-top: 10px;
       }
+
+     
