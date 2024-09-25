@@ -29,27 +29,29 @@ header {
     text-align: center;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 nav {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: rgb(88, 32, 32);
+    height: auto;
     padding: 10px;
-    margin: 0;
+    justify-content: space-around;
 }
+
 
 /* Offer Box */
-#offerbox {
-    max-width: 100%;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-}
-
-#offer {
+#offerbox, #offer {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 40px;
     animation-name: colorAnimate;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-play-state: running;
 }
 
 @keyframes colorAnimate {
@@ -62,7 +64,9 @@ nav {
         transform: translateX(100%);
     }
 }
-
+.img {
+    animation: move 3s ease-out 1s 2 normal none;
+}
 /* Content Section */
 .text-line {
     font-size: 1.5rem;
@@ -73,12 +77,12 @@ nav {
 }
 
 /* Responsive Image */
-.img {
+/* .img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-}
+} */
 
 @keyframes move {
     from {
